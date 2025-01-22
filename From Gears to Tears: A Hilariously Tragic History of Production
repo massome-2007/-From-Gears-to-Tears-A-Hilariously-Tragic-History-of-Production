@@ -1,0 +1,39 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Key historical periods
+periods = ['Industrial Revolution', 'World War I', 'The Great Depression', 'World War II', 'Post-War Boom', '1970s Stagflation', 'Dot-com Bubble', '2008 Financial Crisis', 'Present Day']
+years = [1800, 1914, 1929, 1939, 1945, 1970, 2000, 2008, 2023]
+
+# Basic production data (arbitrary for illustration purposes)
+production_levels = [1, 3, 2, 5, 7, 6, 8, 4, 9]
+
+# Sarcastic commentary for each period
+commentary = [
+    "Industrial Revolution: Child labor was trending.",
+    "World War I: Production for destruction.",
+    "Great Depression: Produce nothing, earn nothing.",
+    "World War II: Explosions galore!",
+    "Post-War Boom: Overproduce, overspend.",
+    "1970s: To wobble or not to wobble.",
+    "Dot-com Bubble: Profits from thin air.",
+    "2008 Crisis: Didn't see that coming!",
+    "Present Day: Pandemic rollercoaster."
+]
+
+# Plotting the production history
+plt.figure(figsize=(14, 7))
+plt.plot(years, production_levels, 'bo-', label='Production Levels')
+plt.xlabel('Year')
+plt.ylabel('Production Level (Arbitrary Units)')
+plt.title('From Gears to Tears: A Hilariously Tragic History of Production')
+plt.xticks(years, periods, rotation=45, ha='right')
+
+# Adding sarcastic commentary
+for i, txt in enumerate(commentary):
+    plt.annotate(txt, (years[i], production_levels[i]),
+                 textcoords="offset points", xytext=(0,10), ha='center', fontsize=9, color='red')
+
+plt.legend()
+plt.tight_layout()
+plt.show()
