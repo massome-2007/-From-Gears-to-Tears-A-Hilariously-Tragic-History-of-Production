@@ -1,5 +1,4 @@
-#From Gears to Tears: A Hilariously Tragic History of Production
-
+# From Gears to Tears: A Hilariously Tragic History of Production
 Project Overview:
 In this delightfully twisted project, we'll embark on a journey through the comedic disasters of production history. From the Industrial Revolution to the modern era, we'll chart a course through the ages using basic production models. Buckle up, because this is going to be a bumpy (and hilariously grim) ride!
 
